@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/v1/products
+
+###
+POST http://localhost:3000/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "teste",
+  "price": 827.02,
+  "brand": "Nike",
+  "image": "http://loremflickr.com/820/480/fashion",
+  "id": 22
+}
+
+###
+GET http://localhost:3000/api/v1/products/4
+
+###
+PATCH  http://localhost:3000/api/v1/products/4
+Content-Type: application/json
+
+{
+  "name": "TESTANDO"
+}
+
+###
+DELETE http://localhost:3000/api/v1/products/6
